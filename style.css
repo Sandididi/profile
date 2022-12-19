@@ -48,9 +48,8 @@ body {
   float: right;
   z-index: -1;
   height: 1200px;
-  width: 70vw;
-  right: 5vw;
-  z-index: 2;
+  margin-left: 25vw;
+
 }
 
 .name {
@@ -87,9 +86,16 @@ a:hover {
           transition-duration: 0.3s;
 }
 
+.Hometext{
+  position: relative;
+  margin-right: 10vw;
+  top: 150px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
 .text {
   position: relative;
-  width: 100%;
+  width: 80%;
   top: 150px;
   letter-spacing: 1px;
   line-height: 25px;
