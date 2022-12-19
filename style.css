@@ -95,6 +95,7 @@ a:hover {
 }
 .text {
   position: relative;
+  margin-right: 10vw;
   width: 80%;
   top: 150px;
   letter-spacing: 1px;
