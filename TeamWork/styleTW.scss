@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'NotoSerifTC-Ubuntu';
-    src: url("fonts/NotoSansTC-Light.otf");
+    src: url("../fonts/NotoSansTC-Light.otf");
     font-weight: 300;
     unicode-range: U+4E00-9FFF,U+3100-312F;
   }
   
   @font-face {
     font-family: 'NotoSerifTC-Ubuntu';
-    src: url("fonts/Ubuntu-Light.ttf");
+    src: url("../fonts/Ubuntu-Light.ttf");
     font-weight: 300;
     unicode-range: U+00-024F;
   }
@@ -270,6 +270,7 @@
         h3{
           font-size: 18px;
           margin: 20px 0px;
+          font-weight: normal;
         }
     }
     .menu-border {

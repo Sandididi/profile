@@ -194,6 +194,7 @@ a:hover {
   .list h3 {
     font-size: 18px;
     margin: 20px 0px;
+    font-weight: normal;
   }
   .menu-border {
     margin: 0;
