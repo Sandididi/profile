@@ -279,6 +279,10 @@ table {
   .list {
     position: fixed;
   }
+  .list h3 {
+    font-size: 18px;
+    margin: 20px 0px;
+  }
   .menu-border {
     margin: 0;
     padding: 0;
@@ -384,9 +388,4 @@ table {
 }
 .orangelink:hover {
   color: #76cda3;
-}
-
-.list h3 {
-  font-size: 21px;
-  margin: 20px 0px;
 }/*# sourceMappingURL=styleTW.css.map */

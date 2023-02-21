@@ -240,6 +240,10 @@
     }
     .list{
         position: fixed;
+        h3{
+          font-size: 18px;
+          margin: 20px 0px;
+        }
     }
     .menu-border {
         margin: 0;
@@ -352,9 +356,4 @@
       color: #76cda3;
     }
   }
-  .list {
-    h3{
-      font-size: 21px;
-      margin: 20px 0px;
-    }
-  }
+  

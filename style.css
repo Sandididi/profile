@@ -191,6 +191,10 @@ a:hover {
   .list {
     position: fixed;
   }
+  .list h3 {
+    font-size: 18px;
+    margin: 20px 0px;
+  }
   .menu-border {
     margin: 0;
     padding: 0;
