@@ -1,0 +1,245 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+/////reset
+/// 
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+$red:#ec6262;
+$white:#f0f0e6;
+$darkGray:#474747;
+body{
+    background-color: $darkGray;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+label{
+    height: 100vh;
+}
+input{
+    display: none;
+    z-index: 5;
+}
+.card{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50vh;
+    left: 50vw;
+    transition: all 0.3s;
+    animation: ballMove 1s  ease-in-out  infinite;
+    animation-direction: alternate-reverse;
+    &:hover{
+        animation: ballStatic 1s  ease-in-out  infinite;
+        animation-direction: alternate-reverse;
+    }
+    &:active{
+        .centerBall{
+            background-color: $red;
+
+        }
+    }
+}
+
+.card div{
+    width: 80vw;
+    height: 40vw;
+    max-width: 300px;
+    max-height: 150px;
+    transition: all 0.3s;
+}
+.topBall{
+    transition: all 0.5s;
+    border-radius: 150px 150px 0px 0px;
+    background-color: $red;
+    border-bottom: 5px solid $darkGray;
+    transform: translateY(-2%);
+    .centerBall{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: calc(100% + 5px);
+        left: 50%;
+        width: 68px;
+        height: 68px;
+        border: 10px solid $darkGray;
+        background-color: $white;
+        border-radius: 100%;
+        &:after{
+            content: '';
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            width: 46px;
+            height: 46px;
+            border-radius: 100%;
+            background-color: $white;
+            animation: blink 1.5s ease-in-out infinite;
+            z-index: 10;
+        }
+    }
+    z-index: 3;
+}
+.bottomBall{
+    transition: all 0.5s;
+    border-radius: 0px 0px 150px 150px;
+    background-color: $white;
+    border-top: 5px solid $darkGray;
+    transform: translateY(2%);
+}
+.inner div{
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.inner{
+    transition: all 0.3s;
+    position: absolute;
+    width: 80vw;
+    height: 0vw;
+    max-width: 290px;
+    max-height: 0px;
+    transform: translate(-50%, -50%);
+    top: 50vh;
+    left: 50vw;
+    border-radius: 12px;
+    background-color: #995f5f;
+    z-index: -2;
+    .totodile{
+        transition: all 0.5s;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(20%);
+        z-index: -1;
+        opacity: 0;
+        img{
+            width: 260px;
+        }
+    }
+    .hbdText{
+        transition: all 0.5s;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(20%);
+        z-index: -2;
+        opacity: 0;
+        img{
+            width: 220px;
+        }
+    }
+}
+span{
+    position: absolute;
+    color: rgba(#fff,0.8);
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+.marquee{
+    position: absolute;
+    overflow: hidden;
+    transform: translate(0%, -50%);
+    width: 100vw;
+    height: 40px;
+    top: 50vh;
+    left: 0;
+    border-top: 1px solid #57ace2;
+    border-bottom: 1px solid #57ace2;
+}
+.marTop{
+    top: 12vh;
+    span{
+        animation: marqueeMove 10s -4.5s linear infinite;
+    }
+}
+.marBottom{
+    top: 88vh;
+    z-index: -1;
+    span{
+        animation: marqueeMove 10s linear infinite;
+    }
+}
+
+input[type="checkbox"]:checked ~ .card{
+    animation:none;
+    &:hover{
+        animation: none;
+    }
+    .topBall{
+        transform: translateY(-100%);
+    }
+    .bottomBall{
+        transform: translateY(100%);
+    }
+    .centerBall{
+        &:after{
+            animation:none; 
+        }
+    }
+}
+input[type="checkbox"]:checked ~ .inner{
+    background-color: rgba(#f2ef9c,1);
+    height: 80vw;
+    max-height: 290px;
+    .totodile{
+        transform: translate(-50%, -50%) scale(100%);
+        left: 15%;
+        opacity: 1;
+    }
+    .hbdText{
+        transform: translate(-50%, -50%) scale(100%);
+        left: 75%;
+        opacity: 1;
+    }
+}
+
+@keyframes ballMove {
+    0%{
+        transform: translate(calc(-50% + 30px),-50%) rotate(20deg);
+    }
+    
+    100%{
+        transform: translate(calc(-50% - 30px),-50%) rotate(-20deg);
+    }
+}
+@keyframes ballStatic {
+    0%{
+        transform: translate(-50%,-50%) ;
+    }
+    
+    100%{
+        transform: translate(-50%,-50%) ;
+    }
+}
+@keyframes blink{
+    0%{
+        background-color: $white;
+        box-shadow: 
+            0px 0px 0px 0px rgba($red,0.8),
+            0px 0px 0px 0px rgba($red,0.7),
+            0px 0px 0px 0px rgba($red,0.5);
+    }
+    50%{
+        background-color: rgba($red,0.7);
+        box-shadow: 
+            0px 0px 3px 3px rgba($red,0.8),
+            0px 0px 5px 5px rgba($red,0.7),
+            0px 0px 10px 10px rgba($red,0.5);
+    }
+    100%{
+        background-color: $white;
+        box-shadow: 
+            0px 0px 0px 0px rgba($red,0.8),
+            0px 0px 0px 0px rgba($red,0.7),
+            0px 0px 0px 0px rgba($red,0.5);
+    }
+}
+
+@keyframes marqueeMove {
+    0%{
+        left: 180vw;
+    }
+    100% {
+        left: -180vw; 
+    }
+}
