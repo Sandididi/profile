@@ -17,12 +17,11 @@ body {
   font-family: NotoSerifTC-Ubuntu;
 }
 
-.container {
+.container-all {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
-  margin: 0;
 }
 
 .header {
@@ -30,17 +29,24 @@ body {
   position: fixed;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  transform: translateX(-50%);
+  left: 50%;
   width: 100%;
   background-color: #e9e7e8;
+  height: 160px;
 }
 
 h1 {
   font-size: 30px;
   background-color: #e9e7e8;
   margin: 0px 60px;
+  line-height: 160px;
+  font-weight: bold;
 }
 
 .burger {
+  display: none;
   background-color: #FF7F50;
   border: 0;
   border-radius: 8px;
@@ -101,19 +107,29 @@ h1 {
 .info {
   display: flex;
   margin-top: 160px;
-  width: 96vw;
+  width: 100%;
 }
 
 .menu {
-  display: flex;
   flex: 1;
   color: #333;
-  padding: 40px 0px 0px 40px;
+  padding-top: 40px;
+  padding-left: 60px;
+  justify-content: start;
+}
+
+.menu-border {
+  margin: 0;
+  padding: 0;
+  height: 80%;
+  border-left: 1px groove #FF7F50;
 }
 
 .content {
+  flex: 6;
   display: flex;
-  flex: 4;
+  justify-content: center;
+  padding: 40px 60px;
 }
 
 .rightList {
@@ -121,19 +137,16 @@ h1 {
 }
 
 .list {
-  line-height: 24px;
-  font-size: 18px;
+  position: fixed;
+  line-height: 2;
+  font-size: 20px;
   letter-spacing: 2px;
+  padding: 0;
 }
-
-ul {
+.list li {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-li {
-  margin-left: 5px;
 }
 
 a {
@@ -148,7 +161,35 @@ a:hover {
 
 .text {
   letter-spacing: 1px;
-  line-height: 25px;
+  line-height: 1.5;
+}
+.text h3 {
+  margin: 20px 0px;
+}
+.text p {
+  margin: 0;
+  padding: 4px 0px;
+}
+
+.cv {
+  display: flex;
+}
+.cv .cv-inner {
+  flex: 1;
+  padding-right: 8px;
+}
+.cv .cv-inner p {
+  text-align: justify;
+}
+.cv .img {
+  flex: 1;
+  padding-left: 24px;
+  max-width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.cv .img img {
+  width: 100%;
 }
 
 .footer {
@@ -157,7 +198,7 @@ a:hover {
   background-color: #d9d7d8;
   color: #666;
   margin-top: 80px;
-  padding: 20px;
+  padding: 20px 0px;
   text-align: center;
 }
 .footer p {
@@ -177,56 +218,29 @@ a:hover {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1340px) {
-  .header {
-    height: 160px;
-    justify-content: space-between;
-  }
-  .header h1 {
-    line-height: 160px;
-  }
-  .header .burger {
-    display: none;
-  }
-  .list {
-    position: fixed;
-  }
-  .list h3 {
-    font-size: 21.06px;
-    margin: 21.06px 0px;
-    font-weight: 700;
-  }
-  .menu-border {
-    margin: 0;
-    padding: 0;
-    height: 80%;
-    border-left: 1px groove #FF7F50;
-  }
-  .content {
-    padding: 40px 60px;
-  }
-}
 @media screen and (max-width: 1340px) {
-  .container {
+  .menu-border {
+    border: 0px solid #FF7F50;
+  }
+  .container-all {
     align-content: center;
   }
   .header {
     position: fixed;
     top: 0%;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     justify-content: space-between;
   }
   .header h1 {
     line-height: 100px;
-    margin: 0;
-    padding: 0px 60px;
     font-size: 32px;
   }
   .header h1 a {
     color: #FF7F50;
   }
   .header .burger {
+    display: block;
     margin: 0px 60px;
     padding: 0px;
   }
@@ -237,22 +251,21 @@ a:hover {
     margin-top: 100px;
   }
   .list {
+    position: static;
     text-align: center;
-    padding-bottom: 26px;
+    padding: 0;
   }
-  .list h3 {
+  .list li {
     margin: 0;
-    line-height: 58px;
+    height: 46px;
     font-size: 32px;
+    font-weight: normal;
   }
   .list a {
     color: #666;
   }
   .list a:hover {
     color: #FF7F50;
-  }
-  .list li {
-    display: none;
   }
   .menu {
     padding: 0;
@@ -264,11 +277,19 @@ a:hover {
     border-top: 1px groove #FF7F50;
   }
   .content {
-    padding: 20px 80px;
+    padding: 20px 0px;
     margin: 0px;
   }
+  .content h2 {
+    margin: 24px 0px;
+    font-size: 28px;
+  }
+  .content h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 767px) {
   .header h1 {
     font-size: 28px;
     margin: 0px 0px 0px 30px;
@@ -277,14 +298,20 @@ a:hover {
   .header .burger {
     margin: 0px 30px 0px 0px;
   }
-  .list h3 {
-    line-height: 46px;
-    font-size: 30px;
-  }
   .content {
-    padding: 0px 30px;
+    padding: 0px 16px;
   }
   .content h2 {
-    margin: 20px;
+    text-align: center;
+  }
+  .cv {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .cv div {
+    margin-bottom: 16px;
+  }
+  .cv .img {
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */
