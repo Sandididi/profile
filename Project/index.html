@@ -6,11 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wei-Hsuan Hung</title>
-  <link rel="icon" type="image/x-icon" href="../icon-fav.png">
+  <link rel="shortcut icon" href="../icon-fav.png"/>
+  <link rel="bookmark" href="../icon-fav.png"/>
+  <link rel="icon" type="image/x-icon" href="..//icon-fav.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../style.css">
-  <link rel="stylesheet" type="text/css" href="styleProject.css">
+  <link rel="stylesheet" type="text/css" href="../styleProject.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -33,12 +35,12 @@
     <div class="info">
         <div class="menu">
                 <ul class="list">
-                    <li onclick="document.location.reload()"><a href="">CV</a></li>
+                    <li><a href="https://www.sandididi.xyz/">CV</a></li>
                     <li>
-                        <a href="https://www.sandididi.xyz/practise/">UI/UX</a>
+                        <a href="https://www.sandididi.xyz/uiux/">UI/UX</a>
                     </li>
-                    <li>
-                        <a href="https://www.sandididi.xyz/project/">Project</a>
+                    <li  onclick="document.location.reload()">
+                        <a href="">Project</a>
                     </li>
                     <li>
                         <a href="https://www.sandididi.xyz/teamwork/">Team Work</a>
@@ -184,6 +186,9 @@
     $(".burger").click(function () {
       $(this).toggleClass("open");
       $(".list").slideToggle(1200);
+      $('html, body').animate({
+        scrollTop: 0
+        }, 1000);
     });
     if ($(window).width() > 1340) {
       $(".list").show();
