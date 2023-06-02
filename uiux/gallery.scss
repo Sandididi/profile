@@ -20,6 +20,7 @@ $gray-text: #666;
 .gallery {
     z-index: -2;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     .gallery-item {
         position: relative;
@@ -48,16 +49,12 @@ $gray-text: #666;
                 transition: 0.3s;
                 opacity: 0;
             }
-            a{
-                color: white;
-                text-decoration: none;
-            }
-            
             h3{
                 transition: 0.3s;
                 line-height: 2;
                 font-weight: 600;
                 font-size: 22px;
+                color: white;
             }
         }
         .year22{
@@ -70,6 +67,7 @@ $gray-text: #666;
             justify-content: start;
             padding: 0px 8px;
             .mat_tag{
+                color: white;
                 border: rgba($orange,0.6) solid 1px;
                 margin: 8px 0px 16px 8px;
                 padding: 2px 6px;
