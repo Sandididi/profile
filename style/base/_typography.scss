@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+html {
+  font-family: 'Noto Sans TC', 黑體-繁, Apple LiGothic Medium, PingFang,
+    微軟正黑體, Microsoft JhengHei, WenQuanYi Zen Hei, helvetica, Arial,
+    sans-serif;
+  font-weight: var(--light);
+}
+
+input[type="text"] {
+  font-family: 'Noto Sans TC', 黑體-繁, Apple LiGothic Medium, PingFang,
+    微軟正黑體, Microsoft JhengHei, WenQuanYi Zen Hei, helvetica, Arial,
+    sans-serif;
+}
+
+body {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.5;
+}

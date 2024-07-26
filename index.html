@@ -1,114 +1,382 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wei-Hsuan Hung</title>
-    <link rel="shortcut icon" href="../icon-fav.png" />
-    <link rel="bookmark" href="../icon-fav.png" />
-    <link rel="icon" type="image/x-icon" href="..//icon-fav.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;600&family=Ubuntu:wght@300;400;500&display=swap"
-        rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Sandididi.</title>
+    <meta name="description" content="Sandi's portfolio. 2021-2024">
+    <!-- for Google -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-language" content="zh-Hant-TW">
+    <!-- for thisArticle -->
+    <meta name="copyright" content="Sandi Hung">
+    <!-- <meta name="URL" content="https://sandididi.xyz/">
+    <link rel="canonical" href="https://sandididi.xyz/"> -->
+    <link rel="icon" href="/src/favicon.png" sizes="any"> 
+    <meta name="news_keywords" content="UIUX Design,portfolio,UI,UX,Web,App,3D,Codeing">
+    <!-- favicon -->
+    <link rel="preload" href="src/og_img.jpg" as="image">
+    <link rel="shortcut icon" type="image/x-icon" href="src/favicon.png" />
+    <!-- for Facebook -->
+    <meta property="og:title" content="Sandididi.">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:url" content="https://sandididi.xyz/"> -->
+    <meta property="og:description" content="Sandi's portfolio. 2021-2024">
+    <meta property="og:image" content="src/og_img.jpg">
+    <meta property="article:author" content="Sandi Hung">
+    <meta property="og:locale" content="zh_tw">
+     <!-- for twitter -->
+    <meta name="twitter:title" content="Sandididi.">
+    <meta name="twitter:description" content="Sandi's portfolio. 2021-2024">
+    <meta name="twitter:image" content="src/og_img.jpg">
+    <meta name="twitter:image:src" content="src/og_img.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- script CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style/mainstyle.css">
 </head>
-
 <body>
-    <div class="container-all">
-        <div class="header">
-            <h1><a href="">Wei-Hsuan Hung</a></h1>
-            <button class="burger">
-                <div class="burgerinner"></div>
-            </button>
+    <div class="cursor"></div>
+    <section class="landingcover">
+        <div class="typewriter">
+            <h1 id="typewriter-text"></h1>
+        </div>
+        <div class="more">
+            <h4>see more</h4>
+            <a href="#work"><button class="btn cursun">Work...</button></a>
+        </div>
+    </section>
+    <!-- fixed -->
+    <div class="nav">
+        <label for="navcheck" id="navtab">
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </label>
+        <ul class="nav_tags nav_close" id="nav_tags">
+            <a href="#about">
+                <li>About</li>
+            </a>
+            <a href="#work">
+                <li>Works</li>
+            </a>
+        </ul>
+    </div>
+    
+   
+    <div class="fix_land_btm">
+        <div class="info">
+            <h4>UI / UX Designer</h4>
+            <span>sandididi1997@gmail.com</span>
         </div>
         <div class="info">
-            <div class="menu">
-                <ul class="list">
-                    <li onclick="document.location.reload()"><a href="">CV</a></li>
-                    <li>
-                        <a href="https://www.sandididi.xyz/uiux/">UI/UX</a>
-                    </li>
-                    <li>
-                        <a href="https://www.sandididi.xyz/project/">Project</a>
-                    </li>
-                    <li>
-                        <a href="https://www.sandididi.xyz/teamwork/">Team Work</a>
-                    </li>
-                    <li><a href="#ContactMe">Contact me</a></li>
-                </ul>
-            </div>
-            <div class="content menu-border">
-                <div class="text">
-                    <h2>C V</h2>
-                    <div class="cv">
-                        <div class="cv-inner">
-                            <p>&emsp;&emsp;洪偉瑄，台北人，畢業於台北藝術大學新媒體藝術研究所，擅長數位媒材整合創作，作品包含前端介面設計(UI/UX)、3D影像設計、虛擬實境整合應用。2019年曾參與ACM
-                                SIGGRAPH ASIA國際研討會，研究項目為將觸覺感官介入虛擬實境之沉浸式體驗。</p>
-                            <p>&emsp;&emsp;過去作品無論是VR體驗或是網路藝術創作，皆專注於將虛擬空間與現實場景進行整合。身為數位時代下成長的創作者，熱衷於探討虛擬網路與現實關係及媒體互動流程，持續地在新型態的數位媒材中創作、學習。
-                            </p>
-                        </div>
-                        <div class="img">
-                            <img src="me.png" alt="">
-                        </div>
-                    </div>
-                    <h3>學歷</h3>
-                    <p>國立台北藝術大學 - 新媒體藝術研究所，2023，畢業<br>國立台北科技大學 - 互動設計系，2019，畢業</p>
-                    <h3>獲獎紀錄</h3>
-                    <p>2019&ensp; ACM SIGGRAPH ASIA《Pumping Life》，Runners-Up in Best
-                        XR Content</p>
-                    <p>2021&ensp; 北藝大妖山混血盃《仁心仁術診療室》，優選</p>
-
-                    <h3>參展與相關經驗</h3>
-                    <p>2022&ensp;《仁心仁術診療室》講述表演－烏腳之謎，仁安醫院，臺北，臺灣</p>
-                    <p>2022&ensp;《感知的鏡面-創作聯展》，良室藝術空間，臺北，臺灣</p>
-                    <p>2021&ensp;《北藝大妖山混血盃》，國立臺北藝術大學，臺北，臺灣</p>
-                    <p>2021&ensp; 新媒體藝術學系碩士班跨域表演期末作品《死與變容-La petite mort》，線上演出</p>
-                    <p>2021&ensp; 新媒體藝術學系碩士班跨域課程期末作品《媒媒歌坊》空間與影像製作，北藝大研究大樓大黑盒，臺北，臺灣</p>
-                    <p>2020&ensp; 關渡光藝術節‒《量子糾纏 》，關渡美術館，新媒體藝術協力，臺北，臺灣</p>
-                    <p>2020&ensp; 新媒系學年度系所學年評鑑展，公共走廊，臺北，臺灣</p>
-                    <p>2019&ensp; 國家圖書館《印象太陽VR》林良作品虛擬實境VR互動展示計劃，3D視覺設計，臺北，臺灣</p>
-                    <p>2019&ensp;《ACM SIGGRAPH ASIA 2019》，Brisbane，AU</p>
-                    <p>2019&ensp;《撲通!》北科大數位互動體驗展，松山文化創意園區四號倉庫，臺北，臺灣</p>
-                    <p>2019&ensp; 高雄放視大賞，高雄展覽館，高雄，臺灣</p>
-                    <p>2017&ensp;《墨菲》，濕地venue沼澤地，臺北，臺灣</p>
-
-
-                </div>
-            </div>
-
-        </div>
-        <div class="footer" id="ContactMe">
-            <p>email: sandididi1997@gmail.com</p>
-            <p>&copy;2023&ensp;Wei-Hsuan, Hung</p>
-            <div class="socialmedia">
-                <a href="https://www.facebook.com/profile.php?id=100001683019327" target="_blank"><img
-                        src="/icon-fb.png" alt="fb"></a>
-                <a href="https://www.instagram.com/ws_sandididi1997/" target="_blank"><img src="/icon-ig.png"
-                        alt="ig"></a>
-                <a href="https://codepen.io/wsmitsui" target="_blank"><img src="/icon-codepen.png" alt="codepen"></a>
-            </div>
+            <a href="#about"><button class="btn cursun">About me.</button></a>
         </div>
     </div>
+    <section class="works container">
+        <div class="notes cursun">
+            <div class="note">
+                <p>Hi, I'm Sandi. I'm a junior <b> UI/UX designer </b> passionate about digital interactive feedback.<br><br>
+                    I love animation, movies, and cooking. My creative work spans both 2D and 3D.<b> Here are some of my recent projects...</b></p>
+            </div>
+            <div class="readarrow">
+                <img src="src/arrow.svg" id="arrow"  alt="arrow">
+                <div class="arrow_t">
+                    <p>read more&emsp;</p>
+                    <p>&emsp;&emsp;about me</p>
+                </div>
+            </div>
+        </div>
+        
+        <h2 id="work">My Work 2021-2024.</h2>
+        <div class="tag-filter">
+            <button id="all" class="tag">All</button>
+            <button class="tag" data-tag="ui">UI</button>
+            <button class="tag" data-tag="ux">UX</button>
+            <button class="tag" data-tag="web">Web</button>
+            <button class="tag" data-tag="app">App</button>
+            <button class="tag" data-tag="3d">3D</button>
+            <button class="tag" data-tag="code">Coding</button>
+            
+            <button class="tag" data-tag="app">App</button>
+            <button id="clear" class="tag">clear</button>
+        </div>
+        <div class="portfolio">
+            <div class="item cursun" data-tags="ui ux app">
+                <h3>App Design</h3>
+                <div class="item-tags">
+                    <span class="item-tag">ui</span>
+                    <span class="item-tag">ux</span>
+                    <span class="item-tag">app</span>
+                </div>
+            </div>
+            <div class="item cursun" data-tags="ui app">
+                <h3>Redesign App</h3>
+                <div class="item-tags">
+                    <span class="item-tag">ui</span>
+                    <span class="item-tag">app</span>
+                </div>
+            </div>
+            <div class="item cursun" data-tags="ui web">
+                <a href="project/edn_styleguide.html">
+                    <img src="src/cover-ednstyle.png" alt="ednstyleguideline">
+                    <h3>新聞網 / Style Guideline (color、popup、eDM)</h3>
+                    <div class="item-tags">
+                        <span class="item-tag">ui</span>
+                        <span class="item-tag">web</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item cursun" data-tags="ui web">
+                <a href="project/edn_nstock.html">
+                    <img src="src/cover-ednnstock.png" alt="ednnstock">
+                    <h3>新聞網 / 股市看盤頁</h3>
+                    <div class="item-tags">
+                        <span class="item-tag">ui</span>
+                        <span class="item-tag">web</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item cursun" data-tags="ui ux web">
+                <a href="project/edn_signup.html">
+                    <img src="src/cover-ednsignin.png" alt="ednsignin">
+                    <h3>新聞網 / Sign Up</h3>
+                    <div class="item-tags">
+                        <span class="item-tag">ui</span>
+                        <span class="item-tag">ux</span>
+                        <span class="item-tag">web</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item cursun" data-tags="ui web">
+                <h3>Redesign event landing Page</h3>
+                <div class="item-tags">
+                    <span class="item-tag">ui</span>
+                    <span class="item-tag">web</span>
+                </div>
+            </div>
+            <div class="item cursun" data-tags="web code">
+                <a href="project/edn_topics.html">
+                    <img src="src/cover-edntopic.png" alt="saltnblackweb">
+                    <h3>新聞網 / 每季互動專題<br><b>2023Q1 - 2024Q3</b></h3>
+                    <div class="item-tags">
+                        <span class="item-tag">web</span>
+                        <span class="item-tag">code</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item cursun" data-tags="3d web code">
+                <a href="project/if_water_clean_again.html">
+                    <img src="src/cover-ifwater.gif" alt="saltnblackweb">
+                    <h3>if water Clean Again / 若水再次清澈<br><b>NFT project</b></h3>
+                    <div class="item-tags">
+                        <span class="item-tag">3d</span>
+                        <span class="item-tag">web</span>
+                        <span class="item-tag">code</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item cursun" data-tags="3d web code">
+                <a href="project/digital_mirror_garden.html">
+                    <img src="src/cover-digimirrorgarden.png" alt="saltnblackweb">
+                    <h3>Digital Mirror Garden /<br> 數位鏡 · 花園</h3>
+                    <div class="item-tags">
+                        <span class="item-tag">3d</span>
+                        <span class="item-tag">web</span>
+                        <span class="item-tag">code</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item cursun" data-tags="3d">
+                <a href="project/salnblack_vr.html">
+                    <img src="src/cover-saltnblackvr.png" alt="saltnblackweb">
+                    <h3>仁心仁術診療室<br><b>VR版</b></h3>
+                    <div class="item-tags">
+                        <span class="item-tag">3d</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item cursun" data-tags="ui web code">
+                <a href="project/salnblack_web.html">
+                    <img src="src/cover-saltnblackweb.gif" alt="saltnblackweb">
+                    <h3>仁心仁術診療室<br><b>網頁版</b></h3>
+                    <div class="item-tags">
+                        <span class="item-tag">ui</span>
+                        <span class="item-tag">web</span>
+                        <span class="item-tag">code</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about container">
+        <div class="aboutme cursun">
+            <div class="id_info">
+                <img id="about" src="src/me.png" alt="">
+                <h2>Sandi / Wei-Hsuan Hung</h2>
+                <div class="contact">
+                    <span>UI / UX Designer</span>
+                    <span>sandididi1997@gmail.com</span>
+                </div>
+                <table class="joblist">
+                    <tr>
+                        <th>2023-24</th>
+                    </tr>
+                    <tr>
+                        <td>Economic Daily News - UI/UX Designer</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="context">
+                <p id="showf">洪偉瑄，台北人，畢業於台北藝術大學新媒體藝術研究所，擅長數位媒材整合創作，作品包含前端介面設計（UI/UX）、3D 影像設計、虛擬實境整合應用。2019年曾參與 ACM SIGGRAPH ASIA 國際研討會，研究項目為將觸覺感官介入虛擬實境之沉浸式體驗。</p>
+                <p>原先在 3D 動畫領域打滾，探索虛擬空間時意外踏入 Web 3D，從此踏入 UI/UX、前端開發的新世界。</p>
+                <p>過去作品無論是VR體驗或是網路藝術創作，皆專注於將虛擬空間與現實場景進行整合。身為數位時代下成長的創作者，熱衷於探討虛擬網路與現實關係及媒體互動流程，持續地在新型態的數位媒材中創作、學習。</p>
+                <div class="skils">
+                    <span>Skill：&ensp;</span>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Adobe CC</li>
+                        <li>Html、CSS、js</li>
+                        <li>Blender 3D</li>
+                    </ul>
+                </div>
+
+                <h4 class="subtitle">學歷</h4>
+                <ul class="tList">
+                    <li>
+                        <span class="year">2023</span>
+                        <p>國立台北藝術大學 - 新媒體藝術研究所，畢業</p>
+                    </li>
+                    <li>
+                        <span class="year">2019</span>
+                        <p>國立台北科技大學 - 互動設計系，畢業</p>
+                    </li>
+                </ul>
+                <h4 class="subtitle">獲獎紀錄</h4>
+                <ul class="tList">
+                    <li>
+                        <span class="year">2019</span>
+                        <p>ACM SIGGRAPH ASIA《Pumping Life》，Runners-Up in Best XR Content</p>
+                    </li>
+                    <li>
+                        <span class="year">2021</span>
+                        <p>北藝大妖山混血盃《仁心仁術診療室》，優選</p>
+                    </li>
+                </ul>
+                <h4 class="subtitle">參展與相關經驗</h4>
+                <ul class="tList">
+                    <li>
+                        <span class="year">2022</span>
+                        <p>《仁心仁術診療室》講述表演－烏腳之謎，仁安醫院，臺北，臺灣</p>
+                    </li>
+                    <li>
+                        <span class="year">2022</span>
+                        <p>《感知的鏡面-創作聯展》，良室藝術空間，臺北，臺灣</p>
+                    </li>
+                    <li>
+                        <span class="year">2021</span>
+                        <p>《北藝大妖山混血盃》，國立臺北藝術大學，臺北，臺灣</p>
+                    </li>
+                    <li>
+                        <span class="year">2021</span>
+                        <p> 新媒體藝術學系碩士班跨域表演期末作品《死與變容-La petite mort》，線上演出</p>
+                    </li>
+                    <li>
+                        <span class="year">2020</span>
+                        <p> 關渡光藝術節‒《量子糾纏 》，關渡美術館，新媒體藝術協力，臺北，臺灣</p>
+                    </li>
+                    <li>
+                        <span class="year">2020</span>
+                        <p> 新媒系學年度系所學年評鑑展，公共走廊，臺北，臺灣</p>
+                    </li>
+                    <li>
+                        <span class="year">2019</span>
+                        <p> 國家圖書館《印象太陽VR》林良作品虛擬實境VR互動展示計劃，3D視覺設計，臺北，臺灣</p>
+                    </li>
+                    <li>
+                        <span class="year">2019</span>
+                        <p>《ACM SIGGRAPH ASIA 2019》，Brisbane，AU</p>
+                    </li>
+                    <li>
+                        <span class="year">2019</span>
+                        <p>《撲通!》北科大數位互動體驗展，松山文化創意園區四號倉庫，臺北，臺灣</p>
+                    </li>
+                    <li>
+                        <span class="year">2019</span>
+                        <p> 高雄放視大賞，高雄展覽館，高雄，臺灣</p>
+                    </li>
+                    <li>
+                        <span class="year">2017</span>
+                        <p>《墨菲》，濕地venue沼澤地，臺北，臺灣</p>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+
+        
+    </section>
+    <section class="footer">
+        <div class="icon"><a href="#"><img src="src/icon.svg" alt="sandi"></a></div>
+        <p> &copy; 2021-24 <span>sandi</span></p>
+    </section>
+
     <script>
-        $(".burger").click(function () {
-            $(this).toggleClass("open");
-            $(".list").slideToggle(1200);
-            $('html, body').animate({
-                scrollTop: 0
-            }, 1000);
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const texts = ["Hi, I'm Sandi.", " Welcome to my Portfolio."];
+            const textElement = document.getElementById("typewriter-text");
+            let textIndex = 0;
+            let charIndex = 0;
+
+            function type() {
+                if (charIndex < texts[textIndex].length) {
+                    textElement.textContent += texts[textIndex].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(type, 100); // Adjust the typing speed here
+                } else if (textIndex < texts.length - 1) {
+                    setTimeout(() => {
+                        textIndex++;
+                        charIndex = 0;
+                        textElement.textContent = ''; // Clear the text content before typing the next sentence
+                        type();
+                    }, 1000); // Adjust the delay before the next text starts typing
+                }
+            }
+
+            type();
         });
-        if ($(window).width() > 1340) {
-            $(".list").show();
-        };
 
+        
+        //follow arrow
+        function rotateArrow() {
+            const arrow = document.getElementById('arrow');
+            const target = document.getElementById('navtab');
+        
+            const arrowRect = arrow.getBoundingClientRect();
+            const targetRect = target.getBoundingClientRect();
+        
+            const arrowCenterX = arrowRect.left + arrowRect.width / 2;
+            const arrowCenterY = arrowRect.top + arrowRect.height / 2;
+            const targetCenterX = targetRect.left + targetRect.width / 2;
+            const targetCenterY = targetRect.top + targetRect.height / 2;
+        
+            const angle = Math.atan2(targetCenterY - arrowCenterY, targetCenterX - arrowCenterX) * 180 / Math.PI;
+        
+            arrow.style.transform = `rotate(${angle}deg)`;
+        }
+
+        window.addEventListener('scroll', rotateArrow);
+        window.addEventListener('resize', rotateArrow);
+        window.addEventListener('DOMContentLoaded', rotateArrow);
+        
     </script>
-</body>
 
+    <script src="filter.js"></script>
+    <script src="script.js"></script>
+    <script src="scrollanimat.js"></script>
+</body>
 </html>
