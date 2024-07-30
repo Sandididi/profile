@@ -118,6 +118,21 @@
             background-color: rgba(black,0.1);
         }
     }
+    .two_column{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 16px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(black,0.1);
+        div{
+            margin:20px 0px;
+            img{
+                margin: 0px;
+                margin-bottom: 4px;
+            }
+        }
+    }
 }
 
 .linkcards{
@@ -266,6 +281,13 @@
         .projlink{
             font-size: 20px;
             margin: 48px 0px;
+        }
+        .two_column{
+            flex-direction: row;
+            padding: 8px 16px;
+            div{
+                margin: 20px 16px;
+            }
         }
     }
     .credit{

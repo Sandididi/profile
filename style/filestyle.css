@@ -117,6 +117,21 @@
   color: coral;
   background-color: rgba(0, 0, 0, 0.1);
 }
+.file-container .two_column {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.file-container .two_column div {
+  margin: 20px 0px;
+}
+.file-container .two_column div img {
+  margin: 0px;
+  margin-bottom: 4px;
+}
 
 .linkcards {
   display: flex;
@@ -253,6 +268,13 @@
   .file-container .projlink {
     font-size: 20px;
     margin: 48px 0px;
+  }
+  .file-container .two_column {
+    flex-direction: row;
+    padding: 8px 16px;
+  }
+  .file-container .two_column div {
+    margin: 20px 16px;
   }
   .credit p {
     font-size: 16px;
