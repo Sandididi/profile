@@ -68,11 +68,15 @@
 .file-container{
     padding: 0px 22px;
     margin: 40px auto;
-    max-width: 980px;
+    max-width: 1280px;
     h4{
         font-size: 24px;
         line-height: 1.5;
         margin-top: 60px;
+    }
+    p.context{
+        max-width: 860px;
+        margin: 40px auto;
     }
     .context{
         font-size: 18px;
@@ -107,9 +111,11 @@
         max-width: 580px;
     }
     .projlink{
+        display: block;
         font-size: 18px;
         margin: 32px 0px;
-        padding: 12px 8px;
+        padding: 10px 40px;
+        text-align: right;
         color: #0077CD;
         text-decoration: underline dotted;
         transition: all 0.1s;
@@ -201,6 +207,7 @@
 }
 
 .credit{
+    max-width: 720px;
     margin: 60px auto;
     margin-bottom: 80px;
     b{
@@ -283,6 +290,8 @@
             margin: 48px 0px;
         }
         .two_column{
+            margin: 40px auto;
+            max-width: 890px;
             flex-direction: row;
             padding: 8px 16px;
             div{
