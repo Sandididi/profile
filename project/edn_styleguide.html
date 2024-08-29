@@ -84,38 +84,41 @@
     <section class="file-container">
         
         <p class="context">
+            建立經濟日報網設計規範，2023 年網站改版目標是強化會員產品使用、提升不同裝置上的兼容性，新聞網雖然主要是為一般大眾讀者服務，然而為新聞快速穩定產出，需同時考慮記者、編輯、行銷人員作為使用者的需求，為內容產製端製作足夠彈性框架並提高其易用性。
+        </p>
+        <p class="context">
             <b>規範項目：</b>
             <br>新聞網圖示（icon）、字型字級、深淺色模式、<br>
             新聞網常用元件（popup、eDM）
+            
         </p>
-        <p class="context">
-            建立經濟日報網設計規範，2023 年網站改版目標是強化會員產品使用、提升不同裝置上的兼容性，新聞網雖然主要是為一般大眾讀者服務，然而為新聞快速穩定產出，需同時考慮記者、編輯、行銷人員作為使用者的需求，為內容產製端製作足夠彈性框架並提高其易用性。
-        </p>
-        <h4>建立輔主色色票、深色模式色票</h4>
-        <div class="projimage">
-            <img class="cursun shadow" src="../src/edn_colorcode.png" alt="經濟日報色票">
-            <span>新聞網中使用之色票，淺色 ⮂ 深色對應表</span>
-        </div>
+        <h4 class="sublabel">建立輔主色色票、深色模式色票</h4>
         <p class="context">
             主網色彩規範只有設定 logo 使用的紅（#C4181F）灰色的色票數量過多並且不統一導致深色模式難以執行，所以在 style Guideline 規劃上重點進行的是輔助色減量，及建立色票用途的使用規範。
             <br><br><b>重點調整：</b>
             <br>1. logo使用的紅色彩度明度過高，在易讀性應用上不易，所以在製作「按紐」及「內文標題」中進行微調。<br>
             <br>2. 新聞網重點在閱讀性，畫面中 90% 為無彩色，然而原設定的灰色色票並未統一，為優化深色模式建立流程，將多餘灰色刪減，並製作相對應之深色模式。
         </p>
-        <h4>產品圖示（icon）風格一致化，並保留調整彈性</h4>
-        <div class="projimage">
-            <img class="cursun shadow" src="../src/edn_fontello.png" alt="icons_fontello">
-            <span>將icon風格一致後，於 fontello 產生 css 符碼檔</span>
+        <div class="projimage fix">
+            <img class="cursun shadow" src="../src/edn_colorcode.png" alt="經濟日報色票">
+            <span>新聞網中使用之色票，淺色 ⮂ 深色對應表</span>
         </div>
+
+        <h4 class="sublabel">產品圖示（icon）風格一致化，並保留調整彈性</h4>
         <p class="context">
             產品發展的時間序不一，導致建立的圖示系統不一致，同時若是有來回改版需求該圖示遍布於新聞網中容易有疏漏，所以在建立的圖示系統時這次採用 fontello 工具，並且由 UI/UX 設計師管理，網頁中正在使用的圖示若有調整更新時，設計師可以直接使用 fontello 更替內容 css 檔，網頁中將會讀取同樣編號的圖示。
         </p>
-        <h4>行銷元件、eDM 優化，提升通用性、裝置兼容性</h4>
+        <div class="projimage fix">
+            <img class="cursun shadow" src="../src/edn_fontello.png" alt="icons_fontello">
+            <span>將icon風格一致後，於 fontello 產生 css 符碼檔</span>
+        </div>
+
+        <h4 class="sublabel">行銷元件、eDM 優化，提升通用性、裝置兼容性</h4>
         <p class="context" id="showf">
             <b>popup：</b>
             <br>編輯、行銷人員最常使用 popup 向讀者進行推播通知，為增加 popup 通用性，將其規格化設計 3 個主要版型（純圖片、圖＋文、純文字），統一 Web popup 模組樣式與觸發機制，供營運單位方便使用。設計的規範考量文案的彈性及圖片上版的便利性，並且設定不同變數（按鈕數量、時間倒數計時器）符合不同行銷需求。
         </p>
-        <div class="projimage">
+        <div class="projimage fix">
             <img class="cursun shadow" src="../src/edn_popup.png" alt="行銷元件popup">
             <span>行銷工具優化，增加popup通用版型</span>
         </div>
@@ -123,7 +126,7 @@
             <b>eDM：</b>
             <br>重新設計 eDM 樣式，建立不同行銷需求之模板，並優化 eDM 在手機版、深色模式的樣式呈現。
         </p>
-        <div class="projimage mid">
+        <div class="projimage">
             <img class="cursun shadow" src="../src/edn_eDM.png" alt="eDM">
             <span>行銷工具優化，eDM版型整合、增加裝置兼容性</span>
         </div>

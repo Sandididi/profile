@@ -74,10 +74,11 @@
         line-height: 1.5;
         margin-top: 60px;
     }
-    p.context{
+    p.context,h4.sublabel, .linkcards{
         max-width: 860px;
         margin: 40px auto;
     }
+
     .context{
         font-size: 18px;
         line-height: 1.7;
@@ -110,6 +111,9 @@
     .projimage.mid{
         max-width: 580px;
     }
+    .projimage.fix{
+        max-width: 860px;
+    }
     .projlink{
         display: block;
         font-size: 18px;
@@ -138,6 +142,31 @@
                 margin-bottom: 4px;
             }
         }
+    }
+}
+
+//Demo Device
+.demodevice{
+    display: flex;
+    background-color: #e7ebee;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .frame{
+        border: 6px solid #414c55;
+        overflow-y: scroll;
+        margin: 10px;
+    }
+    .frame.mob{
+        border-radius: 24px;
+        max-width: 375px;
+        aspect-ratio: 9 / 16;
+    }
+    .frame.pc{
+        border-radius: 20px;
+        max-width: 1440px;
+        aspect-ratio: 16 / 10;
     }
 }
 
@@ -299,6 +328,62 @@
             }
         }
     }
+    //Demo Device
+    .demodevice{
+        margin: 40px 0px;
+        padding: 40px 20px;
+        .frame{
+            border: 12px solid #414c55;
+            margin: 20px;
+            img{
+                display: block;
+            }
+        }
+        .frame.pc{
+            border-radius: 36px;
+        }
+        .pc{
+            display: none;
+        }
+    }
+    #switch_img{
+        appearance: none;
+        width: 3.5em;
+        height: 1.5em;
+        background: #ddd;
+        border-radius: 3em;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        transition: all .2s ease-in-out;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0 0 .25em rgba(0,0,0,.3);
+            transform: scale(.7);
+            left: 0;
+            transition: all .2s ease-in-out;
+        }
+    }
+    #switch_img:checked{
+        background: #0ebeff;
+        &::after{
+            left: calc(100% - 1.5em);
+        }
+    }
+    #switch_img:checked+.device {
+        .mob{
+            display: none;
+        }
+        .pc{
+            display: block;
+        }
+    }
+
     .credit{
         p{
             font-size: 16px;
