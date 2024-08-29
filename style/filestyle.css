@@ -142,8 +142,13 @@
   margin-bottom: 4px;
 }
 
+.sw_label {
+  display: none;
+}
+
 .demodevice {
   display: flex;
+  margin: 40px 0px;
   background-color: #e7ebee;
   padding: 5px;
   justify-content: center;
@@ -164,6 +169,49 @@
   border-radius: 20px;
   max-width: 1440px;
   aspect-ratio: 16/10;
+}
+.demodevice .pc {
+  display: none;
+}
+
+#switch_img {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 3.5em;
+  height: 1.5em;
+  background: #ddd;
+  border-radius: 3em;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+#switch_img::after {
+  position: absolute;
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+  transform: scale(0.7);
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+#switch_img:checked {
+  background: #0ebeff;
+}
+#switch_img:checked::after {
+  left: calc(100% - 1.5em);
+}
+
+#switch_img:checked + .device .mob {
+  display: none;
+}
+#switch_img:checked + .device .pc {
+  display: block;
 }
 
 .linkcards {
@@ -313,7 +361,6 @@
     margin: 20px 16px;
   }
   .demodevice {
-    margin: 40px 0px;
     padding: 40px 20px;
   }
   .demodevice .frame {
@@ -325,46 +372,6 @@
   }
   .demodevice .frame.pc {
     border-radius: 36px;
-  }
-  .demodevice .pc {
-    display: none;
-  }
-  #switch_img {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    width: 3.5em;
-    height: 1.5em;
-    background: #ddd;
-    border-radius: 3em;
-    position: relative;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.2s ease-in-out;
-  }
-  #switch_img::after {
-    position: absolute;
-    content: "";
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
-    transform: scale(0.7);
-    left: 0;
-    transition: all 0.2s ease-in-out;
-  }
-  #switch_img:checked {
-    background: #0ebeff;
-  }
-  #switch_img:checked::after {
-    left: calc(100% - 1.5em);
-  }
-  #switch_img:checked + .device .mob {
-    display: none;
-  }
-  #switch_img:checked + .device .pc {
-    display: block;
   }
   .credit p {
     font-size: 16px;

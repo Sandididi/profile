@@ -146,8 +146,12 @@
 }
 
 //Demo Device
+.sw_label{
+    display: none;
+}
 .demodevice{
     display: flex;
+    margin: 40px 0px;
     background-color: #e7ebee;
     padding: 5px;
     justify-content: center;
@@ -168,7 +172,50 @@
         max-width: 1440px;
         aspect-ratio: 16 / 10;
     }
+    .pc{
+        display: none;
+    }
 }
+
+#switch_img{
+    appearance: none;
+    width: 3.5em;
+    height: 1.5em;
+    background: #ddd;
+    border-radius: 3em;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: all .2s ease-in-out;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 0 .25em rgba(0,0,0,.3);
+        transform: scale(.7);
+        left: 0;
+        transition: all .2s ease-in-out;
+    }
+}
+#switch_img:checked{
+    background: #0ebeff;
+    &::after{
+        left: calc(100% - 1.5em);
+    }
+}
+#switch_img:checked+.device {
+    .mob{
+        display: none;
+    }
+    .pc{
+        display: block;
+    }
+}
+
+
 
 .linkcards{
     display: flex;
@@ -330,7 +377,6 @@
     }
     //Demo Device
     .demodevice{
-        margin: 40px 0px;
         padding: 40px 20px;
         .frame{
             border: 12px solid #414c55;
@@ -342,47 +388,8 @@
         .frame.pc{
             border-radius: 36px;
         }
-        .pc{
-            display: none;
-        }
     }
-    #switch_img{
-        appearance: none;
-        width: 3.5em;
-        height: 1.5em;
-        background: #ddd;
-        border-radius: 3em;
-        position: relative;
-        cursor: pointer;
-        outline: none;
-        transition: all .2s ease-in-out;
-        &::after{
-            position: absolute;
-            content: "";
-            width: 1.5em;
-            height: 1.5em;
-            border-radius: 50%;
-            background: #fff;
-            box-shadow: 0 0 .25em rgba(0,0,0,.3);
-            transform: scale(.7);
-            left: 0;
-            transition: all .2s ease-in-out;
-        }
-    }
-    #switch_img:checked{
-        background: #0ebeff;
-        &::after{
-            left: calc(100% - 1.5em);
-        }
-    }
-    #switch_img:checked+.device {
-        .mob{
-            display: none;
-        }
-        .pc{
-            display: block;
-        }
-    }
+    
 
     .credit{
         p{
