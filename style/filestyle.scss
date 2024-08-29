@@ -158,18 +158,8 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    border-radius: 4px;
-    &::before{
-        content: '靜態頁展示';
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        font-size: 15px;
-        opacity: 0.4;
-        color: #0077CD;
-        font-weight: 400;
-        text-align: left;
-    }
+    border-radius: 6px;
+    
     .device{
         border: 6px solid #434648;
         border-width: 10px;
@@ -430,7 +420,7 @@
     .demodevice{
         padding: 40px 20px;
         .device{
-            border-width: 8px 2px 8px 10px;
+            border-width: 10px;
         }
     }
     
