@@ -192,16 +192,17 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  width: 90px;
+  width: 96px;
   height: 50px;
-  background: #828689;
+  background-color: #828689;
+  background: url(../src/device-i.png) no-repeat center;
   border-radius: 28px;
   border: 2px solid snow;
   box-sizing: content-box;
   position: relative;
   cursor: pointer;
   outline: none;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   transition: all 0.2s ease-in-out;
 }
 #switch_img::before {
@@ -232,10 +233,11 @@
 }
 
 #switch_img:checked {
-  background: #828689;
+  background-color: #828689;
+  background: url(../src/device-i.png) no-repeat center;
 }
 #switch_img:checked::before {
-  width: 25px;
+  width: 24px;
   height: 28px;
   transform: translate(-50%, -50%) rotate(90deg);
   border-width: 3px 8px 3px 3px;
@@ -402,7 +404,7 @@
     margin: 20px 16px;
   }
   .demodevice {
-    padding: 40px 20px;
+    padding: 20px 20px 40px;
   }
   .demodevice .device {
     border-width: 10px;
