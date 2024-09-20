@@ -252,6 +252,22 @@ body ::selection {
   opacity: 1;
 }
 
+.click-alink {
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.click-alink::before, .click-alink::after {
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+}
+.click-alink::before {
+  background: url("../src/hoverstar.svg") 50% 50% no-repeat;
+  background-size: 30px 30px;
+}
+
 .landingcover {
   position: relative;
   display: flex;

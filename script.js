@@ -16,6 +16,13 @@ $('.cursun').mouseout(function(){
     $('.cursor').removeClass('click-grow');
 });
 
+$('.a_link').mouseover(function(){
+    $('.cursor').addClass('click-alink');
+});
+$('.a_link').mouseout(function(){
+    $('.cursor').removeClass('click-alink');
+});
+
 // menu start
 var $el = $('.menu-icon');
 var $ee = $('.nav_tags');

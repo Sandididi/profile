@@ -105,6 +105,22 @@ body{
     }
   }
 
+  .click-alink{
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    &::before, &::after{
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
+    }
+    &::before{
+        background: url('../src/hoverstar.svg') 50% 50% no-repeat;
+        background-size: 30px 30px;
+    }
+  }
+
 //cover
 
 .landingcover {
