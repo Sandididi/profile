@@ -68,7 +68,7 @@
   max-width: 1280px;
 }
 .file-container h4 {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.5;
   margin-top: 60px;
 }
@@ -83,9 +83,11 @@
   font-weight: normal;
 }
 .file-container .context b {
+  display: inline-block;
   font-size: 20px;
-  line-height: 2;
+  line-height: 1.5;
   font-weight: 600;
+  padding-bottom: 8px;
   color: #01355a;
 }
 .file-container .projimage {
@@ -378,11 +380,11 @@
     margin-top: 80px;
   }
   .file-container .context {
-    font-size: 20px;
+    font-size: 17px;
     margin: 48px 0px;
   }
   .file-container .context b {
-    font-size: 22px;
+    font-size: 20px;
   }
   .file-container .projimage {
     margin: 60px auto;
@@ -486,7 +488,7 @@
     margin-top: 80px;
   }
   .file-container .context {
-    font-size: 24px;
+    font-size: 20px;
     margin: 60px 0px;
     letter-spacing: 0.6px;
     color: #121212;
@@ -498,7 +500,7 @@
     margin: 48px auto;
   }
   .file-container .projlink {
-    font-size: 24px;
+    font-size: 22px;
     margin: 60px 0px;
   }
   .footer {
