@@ -654,7 +654,7 @@ label .menu_open span:nth-child(3) {
 }
 .about .tList li {
   display: flex;
-  margin: 18px 0px;
+  margin: 12px 0px;
   font-size: 17px;
 }
 .about .tList p {
@@ -891,7 +891,7 @@ label .menu_open span:nth-child(3) {
   .id_info {
     position: sticky;
     top: 60px;
-    height: 580px;
+    height: 680px;
     background-color: #fff;
     border: 1px solid skyblue;
     border-radius: 20px;
