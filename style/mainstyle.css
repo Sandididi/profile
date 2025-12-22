@@ -456,16 +456,19 @@ label .menu_open span:nth-child(3) {
   margin-bottom: 60px;
 }
 .notes div {
-  width: 320px;
+  width: 350px;
 }
 
 .note {
-  height: 320px;
+  height: 350px;
   margin: 40px auto;
   background: url("../src/note.svg") no-repeat;
   background-size: cover;
-  padding: 24px 22px;
+  padding: 16px;
   transform: rotate(-2.6deg);
+}
+.note p {
+  line-height: 1.3;
 }
 .note b {
   color: #0077CD;
@@ -794,6 +797,9 @@ label .menu_open span:nth-child(3) {
     display: flex;
     flex-direction: row;
   }
+  .notes p {
+    margin: 8px 0px 12px 0px;
+  }
   .readarrow {
     display: block;
   }
@@ -844,10 +850,11 @@ label .menu_open span:nth-child(3) {
   .note {
     height: 380px;
     margin: 40px auto;
-    padding: 24px;
+    padding: 20px;
     transform: rotate(-4deg);
   }
   .note p {
+    margin: 0px 0px 12px 0px;
     font-size: 20px;
   }
   .note b {
