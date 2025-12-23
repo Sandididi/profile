@@ -84,48 +84,40 @@
     </div>
 
     <section class="file-container">
-        
+        <h4 class="sublabel">Rich Media Gallery：</h4>
         <p class="context">
-            <b>Rich Media Gallery：</b><br>
-            PMP 團隊在過去3年間累積大量的 Rich Media 案例，為了在提案與客戶溝通時能更快速的達成共識，我們將專案分類整理成 Gallery Web。
-            <br>在 Rich Media Media 中主要分兩大主頁，我們把廣告樣式做成 Template 客戶可以依據廣告的需求特性選擇喜歡的模板；另一頁是 show case 客戶可以參考近期不同產業的其他客戶選擇的樣式，並從中找到屬意的廣告樣式。
+            PMP 團隊在過去3年間累積了大量的 Rich Media 案例。為了降低提案時與客戶溝通的高成本加速雙方的達成共識，我開發了 Gallery 網站，將過往專案系統化建立標籤系統（Tagging System），讓業務與客戶能直觀地選定廣告版型。
+            <br>在 Rich Media Media 中結構為雙軌式導覽，分別為 Template、我們把廣告樣式做成 Template(廣告樣式庫)、Showcase(精選案例)。<br><br>
+            <b>廣告樣式庫 (Template)：</b><br>將廣告結構模組化，客戶可依據行銷需求（如：互動率、點擊導向）選擇對應的版型。<br>
+            <b>精選案例 (Showcase)：</b><br>依產業類別分類，提供實戰案例參考，協助客戶快速找到與品牌屬性相符的創意靈感。<br>
         </p>
-        <p class="context">
-            為了保留 Rich Media Gallery 可互動的特性，以及讓全體團隊成員皆能新增與管理最新廣告專案，我們使用 Google sheet API 當作我們的簡易後台，使用者點選廣告模板後會彈出該廣告樣式的說明，並且及時地叫出廣告互動。
-        </p>
-        <p class="context">
-            <b>In-stream Video：</b><br>
-            PMP 也能選擇投放影音廣告在主流的 OTT/CTV 平台，主要投放的格式分為可互動 VPAID 格式、純影音 VAST 格式，在 Gallery 中也可以透過標籤找到相對應的廣告格式。
-        </p>
-
-        <!-- <div class="projimage">
-            <img class="shadow" src="../src/peach-re01.png" alt="redesignPeachweb">
-        </div>
-        <h4 class="sublabel">Web 動態展示</h4>
         <div class="projimage" style="display: flex; flex-direction: column; justify-content: center;">
-            <video autoplay loop width="100%" src="../src/peach-webdemo.mp4"></video>
-            <span>操作頁面：首頁 > 搜尋航班 > 旅客資料</span>
+            <img class="shadow" src="../src/exlab-gallery.png" alt="richmedia">
+            <span>Rich Media Gallery 介面</span>
         </div>
+        <p class="context">
+            <b>技術實踐</b><br>
+            此 Gallery 完整保留了 Rich Media 的動態特性，使用者點選後可即時預覽廣告互動效果並查看詳細規格。在專案維護上，考量到團隊維護的便利性，使用 Google Sheets API 打造簡易 CMS，實現全員自動化維護；前端即時渲染廣告互動效果，讓團隊成員無須接觸程式碼，只要擁有 Google sheet 編輯權限即可隨時新增、管理廣告專案。
+        </p>
         <div class="projimage" style="display: flex; flex-direction: column; justify-content: center;">
-            <video autoplay loop style="width: 100%; max-width: 550px; margin: 0 auto;" src="../src/peach-appdemo.mp4"></video><br>
-            <span>操作頁面：首頁 > 搜尋航班 > 旅客資料</span>
+            <video autoplay loop muted playsinline style="width: 100%; max-width: 600px; margin: 0 auto;" src="../src/exlab-record.mp4"></video><br>
+            <span>Ads Demo</span>
         </div>
-        
+        <h4 class="sublabel">In-stream Video：</h4>
+        <p class="context">
+            在團隊中另一個服務是針對國內知名 OTT/CTV 影音市場的廣告投放，Gallery 同步整合了 VPAID (可互動影音) 與 VAST (純影音) 格式，並透過標籤系統讓使用者能根據投放需求快速篩選。
+        </p>
+        <div class="projimage" style="display: flex; flex-direction: column; justify-content: center;">
+            <img class="shadow" src="../src/exlab-instream.png" alt="In-stream">
+            <span>In-stream Video 介面</span>
+        </div>
         <br>
-        <div class="demodevice" id="showf">
-            <label class="sw_label" for="switch_img"></label>
-            <input type="checkbox" id="switch_img">
-            <div class="device">
-                <div class="frame mob"><img class="mob" src="../src/peach-rwdapp.png" alt="PeachIndex-App"></div>
-                <div class="frame pc"><img class="pc" class="cursun shadow" src="../src/peach-rwdpc.png" alt="PeachIndex-PC"></div>
-            </div>
-        </div> -->
-        
+        <a class="projlink cursun" href="https://performics.com.tw/" target="_blank">still alive ↗</a>
     </section>
 
     <section class="footer">
         <div class="icon"><a href="https://www.sandididi.xyz/"><img src="../src/icon.svg" alt="sandi"></a></div>
-        <p> &copy; 2021-24 <span>sandi</span></p>
+        <p> &copy; 2021-26 <span>sandi</span></p>
     </section>
     <script src="../script.js"></script>
     <script src="../scrollanimat.js"></script>

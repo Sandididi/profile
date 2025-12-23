@@ -398,7 +398,7 @@ label .menu_open span:nth-child(3) {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  line-height: 1.7;
+  line-height: 1.6;
   transition: all 0.6s;
 }
 .fix_land_btm .info:nth-child(1) {
@@ -622,7 +622,7 @@ label .menu_open span:nth-child(3) {
 
 .about img {
   width: 200px;
-  margin: 20px 0px;
+  margin: 16px 0px;
 }
 .about .contact {
   margin: 16px 0px;
@@ -672,9 +672,7 @@ label .menu_open span:nth-child(3) {
   background-color: #ECF0F2;
   border-radius: 4px;
   font-weight: 600;
-  padding: 0px 12px;
-  height: 30px;
-  line-height: 30px;
+  padding: 4px 12px;
 }
 .about p {
   margin: 16px 0px;
@@ -893,7 +891,10 @@ label .menu_open span:nth-child(3) {
     margin: 36px 0px;
   }
   .about .tList li {
-    margin: 20px 0px;
+    margin: 16px 0px;
+  }
+  .about .tList p {
+    font-size: 16px;
   }
   .id_info {
     position: sticky;
