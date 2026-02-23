@@ -356,8 +356,7 @@ label .menu_open span:nth-child(3) {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   z-index: 8;
 }
 .nav_tags a {
@@ -392,8 +391,7 @@ label .menu_open span:nth-child(3) {
   z-index: 3;
   width: 100%;
   background-color: rgba(253, 253, 253, 0.7);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   padding: 8px 0px 36px;
   display: flex;
   justify-content: space-between;
@@ -598,8 +596,7 @@ label .menu_open span:nth-child(3) {
 .item-tag {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.6);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   color: black;
   border: 2px solid rgba(255, 255, 255, 0.2);
   font-size: 18px;
@@ -726,7 +723,6 @@ label .menu_open span:nth-child(3) {
   display: inline-block;
   padding: 8px;
   background-color: #565656;
-  color: #75BDFF;
 }
 .footer .icon img {
   position: absolute;
@@ -735,6 +731,9 @@ label .menu_open span:nth-child(3) {
   transform: translate(-50%, -50%);
   width: 24px;
   height: auto;
+}
+.footer .icon {
+  color: #75BDFF;
 }
 .footer p {
   display: block;

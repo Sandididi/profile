@@ -54,7 +54,6 @@ input {
   background-color: #ec6262;
   border-bottom: 5px solid #474747;
   transform: translateY(-2%);
-  z-index: 3;
 }
 .topBall .centerBall {
   position: absolute;
@@ -79,6 +78,9 @@ input {
   background-color: #f0f0e6;
   animation: blink 1.5s ease-in-out infinite;
   z-index: 10;
+}
+.topBall {
+  z-index: 3;
 }
 
 .bottomBall {
